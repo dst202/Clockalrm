@@ -1,0 +1,29 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+  suda-morris/am2302_rmt:
+    component_hash: b46dd8c20dee72654e8ea4a43b16e8a93e984a6c10426392a4b8486fed50ca93
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.0
+  zorxx/dht:
+    component_hash: 6a5e699b15509d99b90352694e23beb6646855486eb3bafefd1d50058d474e98
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.1
+direct_dependencies:
+- idf
+- suda-morris/am2302_rmt
+- zorxx/dht
+manifest_hash: b630bed6d7daa1cec85b4fbda5d193f1cc4a906c41eb515c80e86f4baafc8320
+target: esp32
+version: 2.0.0
